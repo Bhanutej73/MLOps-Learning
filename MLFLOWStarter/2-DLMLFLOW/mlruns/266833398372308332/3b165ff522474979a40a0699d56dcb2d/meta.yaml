@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/bhanu/Desktop/MLOps-Learning/MLOps-Learning/MLFLOWStarter/2-DLMLFLOW/mlruns/266833398372308332/3b165ff522474979a40a0699d56dcb2d/artifacts
+deleted_time: 1783868970296
+end_time: 1783864248445
+entry_point_name: ''
+experiment_id: '266833398372308332'
+lifecycle_stage: deleted
+run_id: 3b165ff522474979a40a0699d56dcb2d
+run_name: aged-hen-59
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783864248287
+status: 4
+tags: []
+user_id: bhanu

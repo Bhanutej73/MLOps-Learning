@@ -1,0 +1,28 @@
+artifact_path: file:///c:/Users/bhanu/Desktop/MLOps-Learning/MLOps-Learning/MLFLOWStarter/2-DLMLFLOW/mlruns/266833398372308332/models/m-fd80cd62735546bb974c71a2a4052bca/artifacts
+flavors:
+  python_function:
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.tensorflow
+    python_version: 3.12.13
+  tensorflow:
+    code: null
+    data: data
+    keras_version: 2.21.0
+    model_type: keras
+    save_format: tf
+is_signature_from_type_hint: false
+mlflow_version: 3.14.0
+model_id: m-fd80cd62735546bb974c71a2a4052bca
+model_size_bytes: 28944
+model_uuid: m-fd80cd62735546bb974c71a2a4052bca
+prompts: null
+run_id: 84133334e0994f29b2d62b1e815c8d6c
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 11]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-07-12 14:05:29.711586'

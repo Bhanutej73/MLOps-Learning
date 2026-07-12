@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/bhanu/Desktop/MLOps-Learning/MLOps-Learning/MLFLOWStarter/2-DLMLFLOW/mlruns/266833398372308332/f287c6ce154b499e817a1c712b3d4b49/artifacts
+deleted_time: 1783868970258
+end_time: 1783864706118
+entry_point_name: ''
+experiment_id: '266833398372308332'
+lifecycle_stage: deleted
+run_id: f287c6ce154b499e817a1c712b3d4b49
+run_name: clean-croc-819
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783864705892
+status: 4
+tags: []
+user_id: bhanu

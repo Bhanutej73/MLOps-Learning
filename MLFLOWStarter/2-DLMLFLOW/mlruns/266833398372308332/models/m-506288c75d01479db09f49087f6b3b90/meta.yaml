@@ -1,0 +1,10 @@
+artifact_location: file:///c:/Users/bhanu/Desktop/MLOps-Learning/MLOps-Learning/MLFLOWStarter/2-DLMLFLOW/mlruns/266833398372308332/models/m-506288c75d01479db09f49087f6b3b90/artifacts
+creation_timestamp: 1783865146539
+experiment_id: '266833398372308332'
+last_updated_timestamp: 1783865159838
+model_id: m-506288c75d01479db09f49087f6b3b90
+model_type: null
+name: model
+source_run_id: 311d2deebd29473aa3c2e7b78cbe7beb
+status: 2
+status_message: null

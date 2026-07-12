@@ -1,0 +1,9 @@
+artifact_location: file:///c:/Users/bhanu/Desktop/MLOps-Learning/MLOps-Learning/MLFLOWStarter/2-DLMLFLOW/mlruns/266833398372308332
+creation_time: 1783864247910
+effective_trace_archival_retention: null
+experiment_id: '266833398372308332'
+last_update_time: 1783864247910
+lifecycle_stage: active
+name: /wine-quality
+trace_location: null
+workspace: default

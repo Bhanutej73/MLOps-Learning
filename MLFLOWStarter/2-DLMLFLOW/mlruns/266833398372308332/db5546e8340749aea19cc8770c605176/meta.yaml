@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/bhanu/Desktop/MLOps-Learning/MLOps-Learning/MLFLOWStarter/2-DLMLFLOW/mlruns/266833398372308332/db5546e8340749aea19cc8770c605176/artifacts
+end_time: 1783865210264
+entry_point_name: ''
+experiment_id: '266833398372308332'
+lifecycle_stage: active
+run_id: db5546e8340749aea19cc8770c605176
+run_name: tasteful-hare-666
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783865192333
+status: 3
+tags: []
+user_id: bhanu

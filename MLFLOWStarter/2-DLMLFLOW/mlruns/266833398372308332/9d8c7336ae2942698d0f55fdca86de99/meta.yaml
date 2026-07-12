@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/bhanu/Desktop/MLOps-Learning/MLOps-Learning/MLFLOWStarter/2-DLMLFLOW/mlruns/266833398372308332/9d8c7336ae2942698d0f55fdca86de99/artifacts
+deleted_time: 1783868970281
+end_time: 1783864322947
+entry_point_name: ''
+experiment_id: '266833398372308332'
+lifecycle_stage: deleted
+run_id: 9d8c7336ae2942698d0f55fdca86de99
+run_name: painted-swan-308
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783864322867
+status: 4
+tags: []
+user_id: bhanu

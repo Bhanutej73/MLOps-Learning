@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/bhanu/Desktop/MLOps-Learning/MLOps-Learning/MLFLOWStarter/2-DLMLFLOW/mlruns/266833398372308332/311d2deebd29473aa3c2e7b78cbe7beb/artifacts
+end_time: 1783865159862
+entry_point_name: ''
+experiment_id: '266833398372308332'
+lifecycle_stage: active
+run_id: 311d2deebd29473aa3c2e7b78cbe7beb
+run_name: respected-midge-938
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783865144002
+status: 3
+tags: []
+user_id: bhanu

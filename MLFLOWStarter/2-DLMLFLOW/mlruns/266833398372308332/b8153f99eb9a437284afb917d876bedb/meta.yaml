@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/bhanu/Desktop/MLOps-Learning/MLOps-Learning/MLFLOWStarter/2-DLMLFLOW/mlruns/266833398372308332/b8153f99eb9a437284afb917d876bedb/artifacts
+end_time: 1783865176160
+entry_point_name: ''
+experiment_id: '266833398372308332'
+lifecycle_stage: active
+run_id: b8153f99eb9a437284afb917d876bedb
+run_name: industrious-finch-98
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783865159901
+status: 3
+tags: []
+user_id: bhanu

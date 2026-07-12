@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/bhanu/Desktop/MLOps-Learning/MLOps-Learning/MLFLOWStarter/2-DLMLFLOW/mlruns/266833398372308332/b0974a37b3154cbc8aa914f800dc2e53/artifacts
+deleted_time: 1783868970290
+end_time: 1783864294997
+entry_point_name: ''
+experiment_id: '266833398372308332'
+lifecycle_stage: deleted
+run_id: b0974a37b3154cbc8aa914f800dc2e53
+run_name: unleashed-moth-323
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783864294904
+status: 4
+tags: []
+user_id: bhanu

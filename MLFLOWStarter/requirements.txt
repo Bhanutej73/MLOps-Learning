@@ -1,2 +1,5 @@
 mlflow
 ipykernel
+keras
+tensorflow
+hyperopt

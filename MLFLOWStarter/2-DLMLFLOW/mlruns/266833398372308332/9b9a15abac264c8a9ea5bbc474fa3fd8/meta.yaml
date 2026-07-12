@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/bhanu/Desktop/MLOps-Learning/MLOps-Learning/MLFLOWStarter/2-DLMLFLOW/mlruns/266833398372308332/9b9a15abac264c8a9ea5bbc474fa3fd8/artifacts
+end_time: 1783864985073
+entry_point_name: ''
+experiment_id: '266833398372308332'
+lifecycle_stage: active
+run_id: 9b9a15abac264c8a9ea5bbc474fa3fd8
+run_name: adventurous-bird-918
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783864957583
+status: 3
+tags: []
+user_id: bhanu

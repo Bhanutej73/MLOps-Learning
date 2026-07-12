@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/bhanu/Desktop/MLOps-Learning/MLOps-Learning/MLFLOWStarter/2-DLMLFLOW/mlruns/266833398372308332/d2ed6fb32b6241a6a539889f93830b9b/artifacts
+end_time: 1783865192283
+entry_point_name: ''
+experiment_id: '266833398372308332'
+lifecycle_stage: active
+run_id: d2ed6fb32b6241a6a539889f93830b9b
+run_name: brawny-shark-85
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783865176204
+status: 3
+tags: []
+user_id: bhanu
