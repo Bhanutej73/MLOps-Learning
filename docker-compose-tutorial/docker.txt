@@ -1,0 +1,122 @@
+docker compose up
+time="2026-07-27T11:09:32+05:30" level=warning msg="C:\\Users\\bhanu\\Desktop\\MLOps-Learning\\MLOps-Learning\\docker-compose-tutorial\\docker-compose.yaml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+[+] Running 2/2
+ ! web Warning  pull access denied for web-app, repository does not exist or may require 'docker login'                                                                           2.7s 
+ ✔ redis Pulled                                                                                                                                                                   3.6s 
+Compose can now delegate builds to bake for better performance.
+ To do so, set COMPOSE_BAKE=true.
+[+] Building 17.0s (11/11) FINISHED                                                                                                                               docker:desktop-linux
+ => [web internal] load build definition from Dockerfile                                                                                                                          0.0s
+ => => transferring dockerfile: 208B                                                                                                                                              0.0s
+ => [web internal] load metadata for docker.io/library/python:3.12-alpine                                                                                                         1.8s
+ => [web auth] library/python:pull token for registry-1.docker.io                                                                                                                 0.0s
+ => [web internal] load .dockerignore                                                                                                                                             0.0s
+ => => transferring context: 2B                                                                                                                                                   0.0s
+ => [web 1/4] FROM docker.io/library/python:3.12-alpine@sha256:6d43704baacd1bfbe7c295d7f13079d5d8104ed33568873133f8fc69980419df                                                   0.0s
+ => => resolve docker.io/library/python:3.12-alpine@sha256:6d43704baacd1bfbe7c295d7f13079d5d8104ed33568873133f8fc69980419df                                                       0.0s
+ => [web internal] load build context                                                                                                                                             0.0s
+ => => transferring context: 679B                                                                                                                                                 0.0s
+ => CACHED [web 2/4] WORKDIR /code                                                                                                                                                0.0s
+ => [web 3/4] COPY . .                                                                                                                                                            0.1s
+ => [web 4/4] RUN pip install -r requirements.txt                                                                                                                                12.6s
+ => [web] exporting to image                                                                                                                                                      2.1s 
+ => => exporting layers                                                                                                                                                           1.5s 
+ => => exporting manifest sha256:9f2ce59b6df72534d3dedc8f4179d6563a52423d0c6e267b16212b7832c93cae                                                                                 0.0s 
+ => => exporting config sha256:a31d7c8850996c8834a580612eaea99add0f7badbe0814d7700ab4dbf0b3ab72                                                                                   0.0s 
+ => => exporting attestation manifest sha256:8ccacfdffef6c338e533e8c743f92431b0935c6b9860f9d6e3872145f4e8c3cc                                                                     0.0s 
+ => => exporting manifest list sha256:bbd06f03ab1e93d76c69eef366ad02d5af4a69c5b710821c059e1367ee2afbb4                                                                            0.0s 
+ => => naming to docker.io/library/web-app:latest                                                                                                                                 0.0s
+ => => unpacking to docker.io/library/web-app:latest                                                                                                                              0.5s
+ => [web] resolving provenance for metadata file                                                                                                                                  0.0s
+[+] Running 3/3
+ ✔ web                                        Built                                                                                                                               0.0s 
+ ✔ Container docker-compose-tutorial-redis-1  Created                                                                                                                             0.0s 
+ ✔ Container docker-compose-tutorial-web-1    Recreated                                                                                                                           1.7s 
+Attaching to redis-1, web-1
+redis-1  | Starting Redis Server
+redis-1  | 1:C 27 Jul 2026 05:39:56.425 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1  | 1:C 27 Jul 2026 05:39:56.425 * Redis version=8.8.1, bits=64, commit=00000000, modified=1, pid=1, just started
+redis-1  | 1:C 27 Jul 2026 05:39:56.425 * Configuration loaded
+redis-1  | 1:M 27 Jul 2026 05:39:56.427 * monotonic clock: POSIX clock_gettime
+redis-1  | 1:M 27 Jul 2026 05:39:56.431 * Running mode=standalone, port=6379.
+redis-1  | 1:M 27 Jul 2026 05:39:56.438 * <bf> RedisBloom version 8.8.2 (Git=unknown)
+redis-1  | 1:M 27 Jul 2026 05:39:56.438 * <bf> Registering configuration options: [
+redis-1  | 1:M 27 Jul 2026 05:39:56.438 * <bf>  { bf-error-rate       :      0.01 }
+redis-1  | 1:M 27 Jul 2026 05:39:56.438 * <bf>  { bf-initial-size     :       100 }
+redis-1  | 1:M 27 Jul 2026 05:39:56.438 * <bf>  { bf-expansion-factor :         2 }
+redis-1  | 1:M 27 Jul 2026 05:39:56.438 * <bf>  { cf-bucket-size      :         2 }
+redis-1  | 1:M 27 Jul 2026 05:39:56.438 * <bf>  { cf-initial-size     :      1024 }
+redis-1  | 1:M 27 Jul 2026 05:39:56.438 * <bf>  { cf-max-iterations   :        20 }
+redis-1  | 1:M 27 Jul 2026 05:39:56.438 * <bf>  { cf-expansion-factor :         1 }
+redis-1  | 1:M 27 Jul 2026 05:39:56.438 * <bf>  { cf-max-expansions   :        32 }
+redis-1  | 1:M 27 Jul 2026 05:39:56.438 * <bf> ]
+redis-1  | 1:M 27 Jul 2026 05:39:56.438 * Module 'bf' loaded from /usr/local/lib/redis/modules//redisbloom.so
+redis-1  | 1:M 27 Jul 2026 05:39:56.510 * <search> search-workers default: 8 (min of MAX_WORKER_THREADS=16 and CPU cores)
+redis-1  | 1:M 27 Jul 2026 05:39:56.513 * <search> Redis version found by RedisSearch : 8.8.1 - oss
+redis-1  | 1:M 27 Jul 2026 05:39:56.513 * <search> RediSearch version 8.8.0 (Git=d2ae026)
+redis-1  | 1:M 27 Jul 2026 05:39:56.514 * <search> Low level api version 1 initialized successfully
+redis-1  | 1:M 27 Jul 2026 05:39:56.515 * <search> gc: ON, prefix min length: 2, min word length to stem: 4, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, oom policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, default scorer: BM25STD, 
+redis-1  | 1:M 27 Jul 2026 05:39:56.516 * <search> Initialized thread pools!
+redis-1  | 1:M 27 Jul 2026 05:39:56.516 * <search> Enabled workers threadpool of size 8
+redis-1  | 1:M 27 Jul 2026 05:39:56.580 * <search> Subscribe to config changes
+redis-1  | 1:M 27 Jul 2026 05:39:56.580 * <search> Subscribe to cluster slot migration events
+redis-1  | 1:M 27 Jul 2026 05:39:56.580 * <search> Enabled role change notification
+redis-1  | 1:M 27 Jul 2026 05:39:56.586 * <search> Cluster configuration: AUTO partitions, type: 0, coordinator timeout: 0ms
+redis-1  | 1:M 27 Jul 2026 05:39:56.629 * Module 'search' loaded from /usr/local/lib/redis/modules//redisearch.so
+redis-1  | 1:M 27 Jul 2026 05:39:56.681 * <timeseries> RedisTimeSeries version 80800, git_sha=42ca4f1078fca732b7f9256adbf25914d67e1cc9
+redis-1  | 1:M 27 Jul 2026 05:39:56.681 * <timeseries> Redis version found by RedisTimeSeries : 8.8.1 - oss
+redis-1  | 1:M 27 Jul 2026 05:39:56.681 * <timeseries> Registering configuration options: [
+redis-1  | 1:M 27 Jul 2026 05:39:56.681 * <timeseries>  { ts-compaction-policy   :              }
+redis-1  | 1:M 27 Jul 2026 05:39:56.681 * <timeseries>  { ts-num-threads         :            3 }
+redis-1  | 1:M 27 Jul 2026 05:39:56.681 * <timeseries>  { ts-libmr-protocol      :     INTERNAL }
+redis-1  | 1:M 27 Jul 2026 05:39:56.681 * <timeseries>  { ts-retention-policy    :            0 }
+redis-1  | 1:M 27 Jul 2026 05:39:56.681 * <timeseries>  { ts-duplicate-policy    :        block }
+redis-1  | 1:M 27 Jul 2026 05:39:56.681 * <timeseries>  { ts-chunk-size-bytes    :         4096 }
+redis-1  | 1:M 27 Jul 2026 05:39:56.681 * <timeseries>  { ts-encoding            :   compressed }
+redis-1  | 1:M 27 Jul 2026 05:39:56.681 * <timeseries>  { ts-ignore-max-time-diff:            0 }
+redis-1  | 1:M 27 Jul 2026 05:39:56.681 * <timeseries>  { ts-ignore-max-val-diff :     0.000000 }
+redis-1  | 1:M 27 Jul 2026 05:39:56.681 * <timeseries> ]
+redis-1  | 1:M 27 Jul 2026 05:39:56.682 * <timeseries> Detected redis oss
+redis-1  | 1:M 27 Jul 2026 05:39:56.684 * <timeseries> Subscribe to ASM events
+redis-1  | 1:M 27 Jul 2026 05:39:56.684 * <timeseries> Enabled diskless replication
+redis-1  | 1:M 27 Jul 2026 05:39:56.684 * Module 'timeseries' loaded from /usr/local/lib/redis/modules//redistimeseries.so
+redis-1  | 1:M 27 Jul 2026 05:39:56.695 * <ReJSON> Created new data type 'ReJSON-RL'
+redis-1  | 1:M 27 Jul 2026 05:39:56.701 * <ReJSON> version: 80800 git sha: unknown branch: unknown
+redis-1  | 1:M 27 Jul 2026 05:39:56.702 * <ReJSON> Exported RedisJSON_V1 API
+redis-1  | 1:M 27 Jul 2026 05:39:56.702 * <ReJSON> Exported RedisJSON_V2 API
+redis-1  | 1:M 27 Jul 2026 05:39:56.702 * <ReJSON> Exported RedisJSON_V3 API
+redis-1  | 1:M 27 Jul 2026 05:39:56.702 * <ReJSON> Exported RedisJSON_V4 API
+redis-1  | 1:M 27 Jul 2026 05:39:56.702 * <ReJSON> Exported RedisJSON_V5 API
+redis-1  | 1:M 27 Jul 2026 05:39:56.702 * <ReJSON> Exported RedisJSON_V6 API
+redis-1  | 1:M 27 Jul 2026 05:39:56.702 * <ReJSON> Exported RedisJSON_V7 API
+redis-1  | 1:M 27 Jul 2026 05:39:56.702 * <ReJSON> Enabled diskless replication
+redis-1  | 1:M 27 Jul 2026 05:39:56.703 * <ReJSON> Initialized shared string cache, thread safe: true.
+redis-1  | 1:M 27 Jul 2026 05:39:56.703 * Module 'ReJSON' loaded from /usr/local/lib/redis/modules//rejson.so
+redis-1  | 1:M 27 Jul 2026 05:39:56.703 * <search> Acquired RedisJSON_V7 API
+redis-1  | 1:M 27 Jul 2026 05:39:56.706 * Server initialized
+redis-1  | 1:M 27 Jul 2026 05:39:56.708 * <search> Loading event started
+redis-1  | 1:M 27 Jul 2026 05:39:56.708 * Loading RDB produced by version 8.8.1
+redis-1  | 1:M 27 Jul 2026 05:39:56.708 * RDB age 785 seconds
+redis-1  | 1:M 27 Jul 2026 05:39:56.708 * RDB memory usage when created 1.27 Mb
+redis-1  | 1:M 27 Jul 2026 05:39:56.708 * Done loading RDB, keys loaded: 0, keys expired: 0.
+redis-1  | 1:M 27 Jul 2026 05:39:56.708 * <search> Loading event ended successfully
+redis-1  | 1:M 27 Jul 2026 05:39:56.708 * DB loaded from disk: 0.002 seconds
+redis-1  | 1:M 27 Jul 2026 05:39:56.708 * Ready to accept connections tcp
+redis-1  | 1:M 27 Jul 2026 05:39:56.708 # WARNING: Redis does not require authentication and is not protected by network restrictions. Redis will accept connections from any IP address on any network interface.
+web-1    |  * Serving Flask app 'app.py'
+web-1    |  * Debug mode: off
+web-1    | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+web-1    |  * Running on all addresses (0.0.0.0)
+web-1    |  * Running on http://127.0.0.1:5000
+web-1    |  * Running on http://172.18.0.3:5000
+web-1    | Press CTRL+C to quit
+web-1    | 172.18.0.1 - - [27/Jul/2026 05:40:17] "GET / HTTP/1.1" 200 -
+web-1    | 172.18.0.1 - - [27/Jul/2026 05:41:01] "GET / HTTP/1.1" 200 -
+web-1    | 172.18.0.1 - - [27/Jul/2026 05:41:03] "GET / HTTP/1.1" 200 -
+Gracefully stopping... (press Ctrl+C again to force)
+[+] Stopping 2/2
+ ✔ Container docker-compose-tutorial-web-1    Stopped                                                                                                                            10.5s 
+ ✔ Container docker-compose-tutorial-redis-1  Stopped                                                                                                                             0.4s 
+
+
+C:\Users\bhanu\Desktop\MLOps-Learning\MLOps-Learning\docker-compose-tutorial>
