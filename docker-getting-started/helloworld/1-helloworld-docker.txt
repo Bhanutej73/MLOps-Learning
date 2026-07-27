@@ -1,0 +1,43 @@
+docker build -t welcome-app .
+[+] Building 13.4s (9/9) FINISHED                                                                                                                                                   docker:desktop-linux
+ => [internal] load build definition from Dockerfile                                                                                                                                                0.0s
+ => => transferring dockerfile: 143B                                                                                                                                                                0.0s
+ => [internal] load metadata for docker.io/library/python:3.12-alpine                                                                                                                               0.9s
+ => [internal] load .dockerignore                                                                                                                                                                   0.0s
+ => => transferring context: 2B                                                                                                                                                                     0.0s
+ => [internal] load build context                                                                                                                                                                   0.1s
+ => => transferring context: 4.54kB                                                                                                                                                                 0.0s
+ => [1/4] FROM docker.io/library/python:3.12-alpine@sha256:6d43704baacd1bfbe7c295d7f13079d5d8104ed33568873133f8fc69980419df                                                                         2.8s
+ => => resolve docker.io/library/python:3.12-alpine@sha256:6d43704baacd1bfbe7c295d7f13079d5d8104ed33568873133f8fc69980419df                                                                         0.0s
+ => => sha256:55167a880c7766ee614c8a364a5750fed1153520915dc3cb4b4a0da92791da84 13.76MB / 13.76MB                                                                                                    1.7s
+ => => sha256:71475e2f9a6fa6049ced939c4248cb7711711bfae08e83bf715e83ab54292050 247B / 247B                                                                                                          1.5s
+ => => sha256:37daa602ac89f280ab5b9f9dd12d9ab9df7a0197dd5044850dc1565f354fe3ff 408.74kB / 408.74kB                                                                                                  1.4s
+ => => sha256:55afa1ecc21d2bb5e5045f32dafee56272ffd89860bac26f6c32123439af26a4 3.85MB / 3.85MB                                                                                                      1.8s
+ => => extracting sha256:55afa1ecc21d2bb5e5045f32dafee56272ffd89860bac26f6c32123439af26a4                                                                                                           0.2s
+ => => extracting sha256:37daa602ac89f280ab5b9f9dd12d9ab9df7a0197dd5044850dc1565f354fe3ff                                                                                                           0.2s
+ => => extracting sha256:55167a880c7766ee614c8a364a5750fed1153520915dc3cb4b4a0da92791da84                                                                                                           0.5s
+ => => extracting sha256:71475e2f9a6fa6049ced939c4248cb7711711bfae08e83bf715e83ab54292050                                                                                                           0.0s
+ => [2/4] COPY . /app                                                                                                                                                                               1.2s
+ => [3/4] WORKDIR /app                                                                                                                                                                              0.1s
+ => [4/4] RUN pip install -r requirements.txt                                                                                                                                                       6.7s
+ => exporting to image                                                                                                                                                                              1.4s 
+ => => exporting layers                                                                                                                                                                             0.9s 
+ => => exporting manifest sha256:aebd437fc3d6ed6ffe517f46e672c911031b1dc0da2b9a76b6228eb313dc796a                                                                                                   0.0s 
+ => => exporting config sha256:a8236aa8fe12e2663efdfa48705c0da0f713aa18cabbc909f200e140ca2be21c                                                                                                     0.0s 
+ => => exporting attestation manifest sha256:0ffa223b917c216d5004358798da3556b6e5bcf1e5c06c9d785b67d32bee0176                                                                                       0.0s 
+ => => exporting manifest list sha256:a95c2397c24baef570bbde46762253ef0621f4c2a3a36ddd3660e99871157ae9                                                                                              0.0s 
+ => => naming to docker.io/library/welcome-app:latest                                                                                                                                               0.0s
+ => => unpacking to docker.io/library/welcome-app:latest                                                                                                                                            0.4s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/w4nxyulfpba5q4bivq9i0t5nz
+
+ 1 warning found (use docker --debug to expand):
+ - JSONArgsRecommended: JSON arguments recommended for CMD to prevent unintended behavior related to OS signals (line 5)
+
+C:\Users\bhanu\Desktop\MLOps-Learning\MLOps-Learning\docker-getting-started\helloworld>docker images
+REPOSITORY               TAG       IMAGE ID       CREATED          SIZE
+welcome-app              latest    a95c2397c24b   43 seconds ago   96.5MB
+hello-world              latest    c3cbe1cc1aa5   4 months ago     20.4kB
+docker/getting-started   latest    d79336f4812b   3 years ago      73.9MB
+
+C:\Users\bhanu\Desktop\MLOps-Learning\MLOps-Learning\docker-getting-started\helloworld>

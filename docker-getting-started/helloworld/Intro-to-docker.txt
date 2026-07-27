@@ -1,0 +1,101 @@
+C:\Users\bhanu>docker images 
+REPOSITORY               TAG       IMAGE ID       CREATED       SIZE
+docker/getting-started   latest    d79336f4812b   3 years ago   73.9MB
+
+C:\Users\bhanu>docker run -d -p 80:80 docker/getting-started
+81a6c839ad0c5837375dea71986744318482f29ae79b9fb4be25a345af81cf60
+
+C:\Users\bhanu>docker ps
+CONTAINER ID   IMAGE                    COMMAND                  CREATED          STATUS          PORTS                NAMES
+81a6c839ad0c   docker/getting-started   "/docker-entrypoint.…"   25 seconds ago   Up 24 seconds   0.0.0.0:80->80/tcp   zen_carver
+
+C:\Users\bhanu>docker stop 81a6c839ad0c
+81a6c839ad0c
+
+C:\Users\bhanu>docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+C:\Users\bhanu>docker image
+Usage:  docker image COMMAND
+
+Manage images
+
+Commands:
+  build       Build an image from a Dockerfile
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a filesystem image
+  inspect     Display detailed information on one or more images
+  load        Load an image from a tar archive or STDIN
+  ls          List images
+  prune       Remove unused images
+  pull        Download an image from a registry
+  push        Upload an image to a registry
+  rm          Remove one or more images
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+
+Run 'docker image COMMAND --help' for more information on a command.
+
+C:\Users\bhanu>docker image rm 81a6c839ad0c
+Error response from daemon: No such image: 81a6c839ad0c:latest
+
+C:\Users\bhanu>docker pull hello-world
+Using default tag: latest
+latest: Pulling from library/hello-world
+4f55086f7dd0: Pull complete
+Digest: sha256:c3cbe1cc1aa588a64951ac6286e0df7b27fe2e6324b1001c619bb358770c0178
+Status: Downloaded newer image for hello-world:latest
+docker.io/library/hello-world:latest
+
+C:\Users\bhanu>docker images
+REPOSITORY               TAG       IMAGE ID       CREATED        SIZE
+hello-world              latest    c3cbe1cc1aa5   4 months ago   20.4kB
+docker/getting-started   latest    d79336f4812b   3 years ago    73.9MB
+
+C:\Users\bhanu>docker-run -d -p 80:80 hello-world
+'docker-run' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\bhanu>docker run -d -p 80:80 hello-world
+5c7620480dca12ab71cabbe5f3ac78a74e423564c863c9fbb1608b61113eb503
+
+C:\Users\bhanu>docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+C:\Users\bhanu>docker run -d -p 80:80 docker/hello-world
+Unable to find image 'docker/hello-world:latest' locally
+docker: Error response from daemon: pull access denied for docker/hello-world, repository does not exist or may require 'docker login'
+
+Run 'docker run --help' for more information
+
+C:\Users\bhanu>docker run -d -p 80:80 hello-world
+11462a1976638d5bbaa5ca5551073bd118d55910d555b4c1365eba6302ec6906
+
+C:\Users\bhanu>docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+C:\Users\bhanu>docker run hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+
+C:\Users\bhanu>
